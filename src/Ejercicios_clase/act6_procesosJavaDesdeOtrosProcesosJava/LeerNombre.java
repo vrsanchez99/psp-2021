@@ -16,10 +16,9 @@ public class LeerNombre {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String nombre = args[0];
+		String nombre = args[2];
 		
 		if(nombre==null){
-
 
 			System.out.println("ERROR");
 			System.exit(-1);

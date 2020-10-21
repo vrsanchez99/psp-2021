@@ -8,7 +8,9 @@ public class Ejemplo3 {
   public static void main(String[] args) throws IOException {
 
 	//creamos objeto File al directorio donde esta Ejemplo2
-	File directorio = new File(".\\bin");	
+
+	  //este directorio es en el workspace de intelliJ en linux
+	File directorio = new File("/home/vic/IdeaProjects/psp-2021/src/Ejercicios_clase/act5_procesosJava");
 
 	//El proceso a ejecutar es Ejemplo2			
 	ProcessBuilder pb = new ProcessBuilder("java", "Ejemplo2");

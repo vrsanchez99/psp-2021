@@ -7,7 +7,11 @@ import java.io.*;
 public class Ejemplo2 {
 	public static void main(String[] args) throws IOException {
 
-		Process p = new ProcessBuilder("CMD", "/C", "DIR").start();
+		//Para windows
+		//ProcessBuilder pb = new ProcessBuilder("CMD", "/C", "DIR");
+
+		//Para linux
+		Process p = new ProcessBuilder("gedit", "usr/bin").start();
 		try {
 
 			InputStream is = p.getInputStream();
