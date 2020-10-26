@@ -8,7 +8,12 @@ public class Ejemplo5 {
 
 	public static void main(String[] args) throws IOException {
 
-		File directorio = new File(".\\bin");
+		//windows
+		//		File directorio = new File(".\\bin);
+
+
+		//ubuntu
+		File directorio = new File("/act7_procesosjavadesdeotrosprocesosjavaenviardatos");
 		ProcessBuilder pb = new ProcessBuilder("java", "EjemploLectura");
 
 		pb.directory(directorio);

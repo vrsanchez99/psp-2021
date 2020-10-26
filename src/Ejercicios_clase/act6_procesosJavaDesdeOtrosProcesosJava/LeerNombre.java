@@ -16,7 +16,7 @@ public class LeerNombre {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String nombre = args[2];
+		String nombre = args[0];
 		
 		if(nombre==null){
 

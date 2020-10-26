@@ -6,7 +6,7 @@ import java.io.*;
 
 public class Ejemplo4 {
 	public static void main(String[] args) throws IOException {
-		Process p = new ProcessBuilder("CMD", "/C", "DATE").start();
+		Process p = new ProcessBuilder("/home/vic/IdeaProjects/psp-2021/src/Ejercicios_clase/act7_procesosjavadesdeotrosprocesosjavaenviardatos/enviarcadena.sh").start();
 
 		// escritura -- envia entrada a DATE
 		OutputStream os = p.getOutputStream();
