@@ -5,45 +5,48 @@ public class Ejercicio4 {
     public static void main(String[] args) {
 
 
-        for (String s : args) {
+        if(args.length < 1) {
+            System.out.println("Empty args");
+            System.exit(1);}
 
-            if (args.length < 1) {
+        else {
 
-                System.out.println("Empty args");
-                System.exit(1);
+            for (String s : args) {
 
-            } else if (s.matches("^\\d+(\\.\\d+)?")) {
+                int num = Integer.parseInt(s);
 
-                int num = Integer.valueOf(s);
+                if (s.matches("^\\d+(\\.\\d+)?")) {
 
-                if (num == Math.round(num) && num < 0) {
 
-                    System.out.println(s);
-                    System.exit(3);
+                    if (num == Math.round(num) && num < 0) {
+
+
+                        System.out.println(s);
+                        System.exit(3);
+                    } else {
+
+                        System.out.println("Default");
+                        System.out.println(s);
+                        System.exit(0);
+                    }
+
+
+                } else if (!(s.matches("^\\d+(\\.\\d+)?"))) {
+
+                    System.out.println("Cadena: "+s);
+                    System.exit(2);
+
                 } else {
 
-                    System.out.println("Default");
+                    System.out.println("Default: ");
                     System.out.println(s);
                     System.exit(0);
                 }
 
 
-            } else if (!(s.matches("^\\d+(\\.\\d+)?"))) {
-
-                System.out.println("Cadena: "+s);
-                System.exit(2);
-
-            } else {
-
-                System.out.println("Default");
                 System.out.println(s);
-                System.exit(0);
             }
-
-
-            System.out.println(s);
         }
-
 
     }
 
