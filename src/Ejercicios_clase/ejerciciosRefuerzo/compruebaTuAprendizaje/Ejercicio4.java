@@ -5,11 +5,10 @@ public class Ejercicio4 {
     public static void main(String[] args) {
 
 
-        if(args.length < 1) {
+        if (args.length < 1) {
             System.out.println("Empty args");
-            System.exit(1);}
-
-        else {
+            System.exit(1);
+        } else {
 
             for (String s : args) {
 
@@ -33,7 +32,7 @@ public class Ejercicio4 {
 
                 } else if (!(s.matches("^\\d+(\\.\\d+)?"))) {
 
-                    System.out.println("Cadena: "+s);
+                    System.out.println("Cadena: " + s);
                     System.exit(2);
 
                 } else {
