@@ -12,10 +12,10 @@ public class Ejercicio4 {
 
             for (String s : args) {
 
-                int num = Integer.parseInt(s);
 
                 if (s.matches("^\\d+(\\.\\d+)?")) {
 
+                    int num = Integer.parseInt(s);
 
                     if (num == Math.round(num) && num < 0) {
 
