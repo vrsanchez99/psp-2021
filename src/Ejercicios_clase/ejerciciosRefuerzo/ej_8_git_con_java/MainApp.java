@@ -1,4 +1,4 @@
-package Ejercicios_clase.ejerciciosRefuerzo.git_con_java;
+package Ejercicios_clase.ejerciciosRefuerzo.ej_8_git_con_java;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -29,7 +29,7 @@ public class MainApp extends Application {
         try {
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(FXMLLoader.class.getResource("./git_con_java/VistaCommitsLayout.fxml"));
+            loader.setLocation(FXMLLoader.class.getResource(".git_con_java/VistaCommitsLayout.fxml"));
             rootLayout =  loader.load();
 
 

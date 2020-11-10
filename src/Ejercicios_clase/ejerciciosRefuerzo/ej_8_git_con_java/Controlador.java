@@ -1,6 +1,5 @@
-package Ejercicios_clase.ejerciciosRefuerzo.git_con_java;
+package Ejercicios_clase.ejerciciosRefuerzo.ej_8_git_con_java;
 
-import Ejercicios_clase.ejerciciosRefuerzo.git_con_java.MainApp;
 import javafx.fxml.FXML;
 
 import javax.swing.table.TableColumn;
@@ -28,6 +27,19 @@ public class Controlador {
     private
     TableColumn columna_mensaje;
 
+
+    public void rellenarTabla(){
+
+        ProcessBuilder pb;
+
+
+
+
+
+
+
+
+    }
 
     public MainApp getMainApp() {
         return mainApp;
