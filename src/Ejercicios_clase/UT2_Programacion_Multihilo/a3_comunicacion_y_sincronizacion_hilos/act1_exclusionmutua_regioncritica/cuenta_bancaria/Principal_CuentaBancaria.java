@@ -5,7 +5,7 @@ public class Principal_CuentaBancaria {
 
         Cuenta cuenta = new Cuenta(500, 10000);
 
-        Persona1 persona1 =new Persona1()
+
 
 
 
